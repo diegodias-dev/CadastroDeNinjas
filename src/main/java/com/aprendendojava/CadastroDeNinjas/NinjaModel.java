@@ -9,10 +9,10 @@ public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //automatizar o id
     long id;
-    String nome;
-    String email;
-    String telefone;
-    int idade;
+    private String nome;
+    private String email;
+    private String telefone;
+    private int idade;
 
     public NinjaModel(String nome, String email, String telefone, int idade) {
         this.nome = nome;
